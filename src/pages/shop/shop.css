@@ -1,14 +1,24 @@
+.shop{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .shopTitle {
-    margin-top: 100px;
+    /* margin-top: 100px;
     text-align: center;
-    font-size: 40px;
+    font-size: 40px; */
+    text-align: center;
+    margin-bottom: 20px;
   }
   .products {
-    width: 100%;
+    /* width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
+    place-items: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .product {
@@ -50,4 +60,10 @@
     background-color: rgb(19, 19, 19);
     color: white;
     cursor: pointer;
+  }
+  @media (max-width: 768px) {
+    .products {
+      flex-direction: column;
+      align-items: center;
+    }
   }
